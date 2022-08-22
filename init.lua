@@ -16,7 +16,7 @@ local config = {
     "██    ██ ██   ██ ██  ██  ██     ██      ██   ██ ██",
     " ██████  ██   ██ ██   ██ ██████ ███████ ██   ██ ██",
     " ",
-    "   PEP20 verse 2: Explicit is better than Implicit.",
+    "   PEP20 Verse 2: Explicit is better than Implicit",
   },
 
   -- set vim options here (vim.<first_key>.<second_key> =  value)
@@ -76,6 +76,7 @@ local config = {
   },
 
   -- Set colorscheme to use
+  -- colorscheme = "gruvbox", -- need to figure out colors in toolbar first
   colorscheme = "default_theme",
 
   -- Override highlight groups in any theme
@@ -93,36 +94,36 @@ local config = {
   },
 
   -- Default theme configuration
-  default_theme = {
-    -- set the highlight style for diagnostic messages
-    diagnostics_style = { italic = true },
-    -- Modify the color palette for the default theme
-    colors = {
-      fg = "#abb2bf",
-      bg = "#1e222a",
-    },
-    -- enable or disable highlighting for extra plugins
-    plugins = {
-      aerial = true,
-      beacon = false,
-      bufferline = true,
-      dashboard = true,
-      highlighturl = true,
-      hop = false,
-      indent_blankline = true,
-      lightspeed = false,
-      ["neo-tree"] = true,
-      notify = true,
-      ["nvim-tree"] = false,
-      ["nvim-web-devicons"] = true,
-      rainbow = true,
-      symbols_outline = false,
-      telescope = true,
-      vimwiki = false,
-      ["which-key"] = true,
-    },
-  },
-
+  -- default_theme = {
+  --   -- set the highlight style for diagnostic messages
+  --   diagnostics_style = { italic = true },
+  --   -- Modify the color palette for the default theme
+  --   colors = {
+  --     fg = "#abb2bf",
+  --     bg = "#1e222a",
+  --   },
+  --   -- enable or disable highlighting for extra plugins
+  --   plugins = {
+  --     aerial = true,
+  --     beacon = false,
+  --     bufferline = true,
+  --     dashboard = true,
+  --     highlighturl = true,
+  --     hop = false,
+  --     indent_blankline = true,
+  --     lightspeed = false,
+  --     ["neo-tree"] = true,
+  --     notify = true,
+  --     ["nvim-tree"] = false,
+  --     ["nvim-web-devicons"] = true,
+  --     rainbow = true,
+  --     symbols_outline = false,
+  --     telescope = true,
+  --     vimwiki = false,
+  --     ["which-key"] = true,
+  --   },
+  -- },
+  --
   -- Diagnostics configuration (for vim.diagnostics.config({...}))
   diagnostics = {
     virtual_text = true,
@@ -186,7 +187,10 @@ local config = {
       { "tpope/vim-fugitive" },
       { "tpope/vim-surround" },
       { "nvim-treesitter/nvim-treesitter-context" },
-      { "gruvbox-community/gruvbox" },
+      {
+        "gruvbox-community/gruvbox",
+        as = "gruvbox",
+      },
       -- {
       --   "ray-x/lsp_signature.nvim",
       --   event = "BufRead",
