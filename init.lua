@@ -16,7 +16,7 @@ local config = {
     "██    ██ ██   ██ ██  ██  ██     ██      ██   ██ ██",
     " ██████  ██   ██ ██   ██ ██████ ███████ ██   ██ ██",
     " ",
-    "   PEP20 verse 2: Explicit is better than Implicit",
+    "   PEP20 verse 2: Explicit is better than Implicit.",
   },
 
   -- set vim options here (vim.<first_key>.<second_key> =  value)
