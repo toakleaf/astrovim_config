@@ -241,6 +241,12 @@ local config = {
       },
     },
 
+    ["telescope"] = {
+      defaults = {
+        path_display = { "smart" },
+      },
+    },
+
     aerial = {
       on_attach = function(bufnr)
         -- Jump forwards/backwards with '{' and '}'
