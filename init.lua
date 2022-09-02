@@ -244,6 +244,21 @@ local config = {
     ["telescope"] = {
       defaults = {
         path_display = { "smart" },
+        vimgrep_arguments = {
+          "rg",
+          "--color=never",
+          "--no-heading",
+          "--with-filename",
+          "--line-number",
+          "--column",
+          "--smart-case",
+          "--trim", -- add this value
+        },
+      },
+      pickers = {
+        find_files = {
+          find_command = { "rg", "--files", "--hidden", "--glob", "!.git/*" },
+        },
       },
     },
 
